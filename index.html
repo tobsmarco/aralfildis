@@ -2,7 +2,7 @@
 <html lang="tl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aralin sa FILDIS</title>
   <style>
     body {
@@ -60,7 +60,7 @@
       padding: 15px;
       border-radius: 5px;
       display: none;
-      white-space: pre-wrap; /* preserve line breaks */
+      white-space: pre-wrap;
     }
 
     .active {
@@ -80,10 +80,36 @@
       margin: 15px 0;
       border-radius: 5px;
     }
+
+    #cover {
+      background-image: url('https://assets.onecompiler.app/43htxhvu8/43jfd4f6v/flag.jfif'); /* Replace with your actual image file */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    #cover::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+      border-radius: 10px;
+    }
+
+    #cover h2, #cover p, #cover b {
+      position: relative;
+      z-index: 1;
+    }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Aralin sa FILDIS</h1>
     <p>Libreng aralin para sa lahat</p>
@@ -92,9 +118,8 @@
   <div class="main">
     <nav>
       <a href="#" onclick="showLesson('cover')">Home</a>
-      <!-- Week 1 to 17 links -->
       <script>
-        for (let i = 1; i <= 17; i++) {
+        for (let i = 1; i <= 18; i++) {
           document.write(`<a href="#" onclick="showLesson('week${i}')">Week ${i}</a>`);
         }
       </script>
@@ -104,17 +129,20 @@
       <section id="cover" class="cover active">
         <h2>Maligayang Pagdating!</h2>
         <p>Ang "Aralin sa FILDIS" ay isang koleksyon ng mga libreng aralin para sa mga estudyante. Pumili ng linggo (Week) sa kaliwa upang magsimula.</p>
-    <p>Mga Gumawa:
-      <b>Balonzo, Nena Pauleen </b>
-      <b>Denoso, John Albert</b>
-      <b>Gelilio, John Billy</b>
-      <b>Fernandez, Lawrence</b>
-      <b>Marco, Tobey</b>
-      <b>Saygo, Mark Daniel</b>
-
-
+        
+        
+        <p><b>BSIT 12023:</b>
+        
+        <b>Balonzo, Nena Pauleen </b><br>
+        <b>Denoso, John Albert</b><br>
+        <b>Gelilio, John Billy</b><br>
+        <b>Fernandez, Lawrence</b><br>
+        <b>Marco, Tobey</b><br>
+        <b>Saygo, Mark Daniel</b>
+        <p><b>Author:</b>
+        
+        <b>Ma'am Leila Romar P. Belen</b>
       </section>
-
       <!-- Week 1 content with your exact text -->
       <section id="week1" class="lesson">
        <h2><strong>ANG FILIPINO BILANG WIKANG PAMBANSA</strong><br>WEEK 1</h2>
@@ -187,6 +215,9 @@ Sranan Tongo (Sranan) (wika na may impluwensyang dutch)
 Hamon ng Mother-Tongue-Based Multilingual Education</b>
 Habang nililinang at pinauunlad ang Filipino, nang naluklok na Pansamantalang Punong Komisyoner ng KWF si Dr. Ricardo Ma. Duran Nolasco ay naging direksiyon ng ahensiya ang pagtangkilik sa multilingguwalismo. Katuwang ang Kongresista o Representatibo na si Kgg. at abugado magtanggol Gunigundo ng Valenzuela. Ang Orihinal na House bill blg. 4719 na humihikayat na ipagamit ang unang isinumite sa Senado noong 2008 na ang paksa ay ang pagpapagamit sa unang wikang bilang midyum ng pagtuturo sa mga basikong edukasyon Kinatigan ito ng kagawaran ng Edukasyon at isport sa pamamagitan ng paglalabas ng Ordinansa Blg. 74 na nagtatalakay sa pagsasainstitusyon ng paggamit ng unang wika ng mga mag-aaral.
 Napakalaki ng naging epekto ng pangsasakatuparan ng Mother-Tonguebased, Multilinggual Education o MTB-MLE. Isa iton sa mga naging bagong direksyon sa pag-iimplementa ng K to 12.
+      
+<p><a href="https://docs.google.com/document/d/11QoGi4HFolRdYOne1FF1Z8ixUMdhZsGH/edit?usp=drive_link&ouid=111064999757391678159&rtpof=true&sd=true" target="_blank" style="color: #0066cc; text-decoration: underline;">Basahin ang buong dokumento rito</a></p>
+
       </section>
 
 <!-- Week 2 content -->
@@ -243,6 +274,8 @@ Naglabas si Dr. David San Juan ng isang papel na may pamagat na "Alyansa ng Mga 
 Ayon kay Bienvenido Lumbera: “Sa pagtanggap natin sa wika, pumapaloob tayo sa isang lipunan at nakikiisa sa mga taong naroon.”
 Samakatuwid, ang kamalayan natin bilang indibidwal ay karugtong ng kamalayan ng iba sa lipunan. Kapag may kapangyarihang sumakop sa kamalayan ng kapwa natin sa lipunan, kasama tayong napapasailalim sa nasabing kapangyarihan.
 Ang sariling wika ay hindi nakakabawas ng katalinuhan at katangahan kung gagamitin sa iba’t ibang larangan, kung ang usapin ay karunungan.
+ <p><a href="https://docs.google.com/document/d/1eY541oUBbKl44vvYcfhpKZELLMNg-P0Z/edit?usp=drive_link&ouid=111064999757391678159&rtpof=true&sd=true" target="_blank" style="color: #0066cc; text-decoration: underline;">Basahin ang buong dokumento rito</a></p>
+
  </section>
  
 <!-- Week 3 content -->
@@ -280,7 +313,8 @@ Ang mga sumusunod na halimbawa ng pananaliksik ng mga Guro ay ilan lamang sa mga
 Ang mga sumusunod na halimbawa ng pananaliksik ay ilan lamang sa mga gawa ng mag-aaral. (Nasa Libro ng Filipino sa Iba’t ibang disiplina ang iba pang halimbawa – Pahina 63-69)
 <img src="https://assets.onecompiler.app/43htxhvu8/43httnhny/2.png"  alt="Lesson Image" width="600" style="display: block; margin: 20px auto;">
  
- 
+  <p><a href="https://docs.google.com/document/d/18voTun3-lM2GbVBEM9j6-QP7ZyQGo_IG/edit?usp=drive_link&ouid=111064999757391678159&rtpof=true&sd=true" target="_blank" style="color: #0066cc; text-decoration: underline;">Basahin ang buong dokumento rito</a></p>
+
  </section>
  
  <!-- Week 4 content -->
@@ -423,6 +457,9 @@ Ang mga sumusunod na halimbawa ng pananaliksik ay ilan lamang sa mga gawa ng mag
 (b) Nagiging bahagi ng bokabularyo ang salitang telebisyon.<br>
 (c) Pinapaikli ang mga salitang mahahaba.<br>
 (d) Paminsan ay pamalit sa sensitibong salita sa midya.</p>
+ 
+   <p><a href="https://docs.google.com/document/d/1UPoZoHwbs5vYawCEtE8oSbEx4Mfm-VXa/edit?usp=drive_link&ouid=111064999757391678159&rtpof=true&sd=true" target="_blank" style="color: #0066cc; text-decoration: underline;">Basahin ang buong dokumento rito</a></p>
+
  </section>
  
  <!-- Week 5 content -->
@@ -505,6 +542,8 @@ Ang mga sumusunod na halimbawa ng pananaliksik ay ilan lamang sa mga gawa ng mag
     <h4>Mga dapat gawin para maisulong ang NI</h4>
     <p>Ang tunay at makabuluhang pagbabago ay hindi makakamit nang madalian. Nasa ating mga kamay ang pagsulong ng pagbabago sa pambansang industriyalisasyon.</p>
     <p>Kaugnay ng NDFP-GPH Peace Talks kung saan ang NI ang isang mayoryang laman ng agenda para sa repormang sosyo-ekonomiko. Kailangan ang maigting na pakikihalok ng mamamayan para iparinig ang ating mga panawagan sa parehong panig.</p>
+    
+<p><a href="https://docs.google.com/document/d/1caMWpqGlO4yrH-qRoXsQHKSwAFshagJ6/edit?usp=drive_link&ouid=111064999757391678159&rtpof=true&sd=true" target="_blank" style="color: #0066cc; text-decoration: underline;">Basahin ang buong dokumento rito</a></p>
  </section> 
  
   <!-- Week 7 content -->
@@ -575,6 +614,9 @@ Ang mga sumusunod na halimbawa ng pananaliksik ay ilan lamang sa mga gawa ng mag
   <p>Ilan lamang yan sa mga bahagi ng pananaliksik na ginawa ni Dr. Joel Malaban, pinapakita sa kanyang pananaliksik kung gaano kalakas ang kapangyarihan ng isang awitin at kung ano ang nagiging dulot nito sa mga nakikinig.</p>
   <p>Ang musika ay nakakabit na sa kultura at pamumuhay ng mga Pilipino, nagiging susi rin ito sa pag-unlad ng kanilang kaisipan at pakikibaka sa buhay.</p>
   <p>Isa lamang si Gary Granada sa maraming kompositor ng Pilipinas na maraming gustong sabihin sa bayan sa pamamagitan ng musika.</p>
+
+<p><a href="https://docs.google.com/document/d/1lujc9sEVH1g7Rq0xSnxu2AIIZ5Gy-Mk5/edit?usp=drive_link&ouid=111064999757391678159&rtpof=true&sd=true" target="_blank" style="color: #0066cc; text-decoration: underline;">Basahin ang buong dokumento rito</a></p>
+
 </section>
 
  <!-- Week 8 content -->
@@ -614,6 +656,9 @@ Ang mga sumusunod na halimbawa ng pananaliksik ay ilan lamang sa mga gawa ng mag
     <p>Sa harap ng matinding atake sa kilusang magbubukid sa bansa, hindi sinusuko ng masang magsasaka ang karapatan sa lupa. Bagkus papaigtingin ang pagsusulong ng tunay na Reporma sa Lupa at pagtatanggol sa lupa. Ang Kilusang Magbubukid ng Pilipinas (KMP) na may epektibong pamumuno sa 2 milyong magsasakang Pilipino ay masugid na inaabante ang pagsusulong ng Tunay na Reporma sa Lupa.</p>
     <p>Mahalaga ang pagtatambol ng isyung magbubukid dahil marami na tayong karanasan na sa patuloy nating mga kampanyang masa nahihimok na sumama sa mga magsasaka gaya ng mga kampuhang magbubukid sa mga tanggapan ng DAR at iba pang ahensya. Nagpapakita na ang patuloy na pakikibaka ng mga samahang magsasaka ng bayan, ang nagbibigay ng buhay sa iba pang manggagawang Pilipino, ang pakikibaka sa reporma sa lupa ay hindi lamang laban ng mga magsasaka kundi ay laban din ng buong bansa.</p>
     <p>Sa makatuwid kung magkakaroon ang mga magsasaka ng kanilang sariling lupang masasakahan at hindi na aasa sa panggigipit ng mga panginoong may lupa, ay maaaring malaki ang maging ginhawa ng produksyong pang-agrikultura ng bansa. Maaaring ito ang maging sagot sa kakulangan ng makakain ng masang Pilipino sa kanilang hapag-kainan.</p>
+  
+  <p><a href="https://docs.google.com/document/d/1-FjK6YCPhtAUM9mcab-vdsuL9DL2SOtj/edit?usp=drive_link&ouid=111064999757391678159&rtpof=true&sd=true" target="_blank" style="color: #0066cc; text-decoration: underline;">Basahin ang buong dokumento rito</a></p>
+
   </section>
 
 
@@ -642,6 +687,9 @@ Ang mga sumusunod na halimbawa ng pananaliksik ay ilan lamang sa mga gawa ng mag
 
     <h3>FILIPINO SA NEGOSYO</h3>
     <p>Gaano ba kaepektibo kung gamit ang sariling wika sa pagnenegosyo? Karaniwan nang naging isyu ito sa larang ng pangangalakal o negosyo. Ang paggamit sa wikang Filipino ay higit na nakaiimpluwensiya sa mga taong nakakarinig sa isang programa. Isang patunay na rin ang iba’t ibang anunsyo na mula sa ibang bansa na nilalapatan ng wikang Filipino upang higit nating maunawaan at makahikayat nito ang mga mamimili.</p>
+  
+    <p><a href="https://docs.google.com/document/d/1slRB8s14QHg6Xu236Safg_f97EwAht05/edit?usp=drive_link&ouid=111064999757391678159&rtpof=true&sd=true" target="_blank" style="color: #0066cc; text-decoration: underline;">Basahin ang buong dokumento rito</a></p>
+
   </section>
   
   
@@ -723,6 +771,9 @@ Ang mga sumusunod na halimbawa ng pananaliksik ay ilan lamang sa mga gawa ng mag
       <li>Umiwas sa taong may sintomas</li>
       <li>Palakasin ang katawan sa pamamagitan ng sapat na tulog at nutrisyon</li>
     </ol>
+  
+  <p><a href="https://docs.google.com/document/d/1IW5rPBjW5vP5VZXHbgyWUxv7z7Dj0QTF/edit?usp=drive_link&ouid=111064999757391678159&rtpof=true&sd=true" target="_blank" style="color: #0066cc; text-decoration: underline;">Basahin ang buong dokumento rito</a></p>
+
   </section>
   
   <!-- Week 11 content -->
@@ -842,6 +893,9 @@ Ang mga sumusunod na halimbawa ng pananaliksik ay ilan lamang sa mga gawa ng mag
       <li>Mga Rekomendasyon</li>
     </ul>
   </div>
+
+  <p><a href="https://docs.google.com/document/d/1-NmvGGQxFHS89MLTKNfxcO3jxVFBwQaX/edit?usp=drive_link&ouid=111064999757391678159&rtpof=true&sd=true" target="_blank" style="color: #0066cc; text-decoration: underline;">Basahin ang buong dokumento rito</a></p>
+   
     </section>
    
    
@@ -936,6 +990,9 @@ Ang mga sumusunod na halimbawa ng pananaliksik ay ilan lamang sa mga gawa ng mag
       <li><strong>Mga Apendiks</strong> – Mga dagdag na dokumento o datos na sumusuporta sa pananaliksik.</li>
     </ul>
   </section>
+     
+       <p><a href="https://docs.google.com/document/d/13UYcqMQQC3tAdzX7rO2cCzR01H942qdD/edit?usp=drive_link&ouid=111064999757391678159&rtpof=true&sd=true" target="_blank" style="color: #0066cc; text-decoration: underline;">Basahin ang buong dokumento rito</a></p>
+
       </section>
 <!-- Week 14 content -->
 <section id="week14" class="lesson">
@@ -986,6 +1043,8 @@ Ang mga sumusunod na halimbawa ng pananaliksik ay ilan lamang sa mga gawa ng mag
     <li>Nagkakaroon ng pagkakataong makasalamuha ang kapuwa at makita ang bisa ng pananaliksik upang mapabuti ang kalagayan.</li>
     <li>Mas lalo pang nailalatag ang halaga ng pananaliksik kung isasaalang-alang ang pangangailangan ng lipunang kinabibilangan nito.</li>
   </ul>
+
+<p><a href="https://docs.google.com/document/d/1To7n-tb0fp4qT1EivDyEtZLGnh6aTNFY/edit?usp=drive_link&ouid=111064999757391678159&rtpof=true&sd=true" target="_blank" style="color: #0066cc; text-decoration: underline;">Basahin ang buong dokumento rito</a></p>
 
 </section>
   
@@ -1043,6 +1102,9 @@ Ang mga sumusunod na halimbawa ng pananaliksik ay ilan lamang sa mga gawa ng mag
         <li><strong>Pantawang Pananaw</strong>: Ang tawa bilang kritika sa nasa kapangyarihan</li>
         <li><strong>Sagandiwa</strong>: Multidisiplinaryo, multikultural, at multilingguwal na pag-aaral ng araling Filipino</li>
     </ul>
+
+<p><a href="https://docs.google.com/document/d/1zxQ1-u68UKYT26U5-sAUh12ii4scqINF/edit?usp=drive_link&ouid=111064999757391678159&rtpof=true&sd=true" target="_blank" style="color: #0066cc; text-decoration: underline;">Basahin ang buong dokumento rito</a></p>
+    
 </section>
 </section>
 <!-- Week 16 content -->
@@ -1142,6 +1204,9 @@ Ang mga sumusunod na halimbawa ng pananaliksik ay ilan lamang sa mga gawa ng mag
     <li>Paglikha ng prototayp</li>
     <li>Etnograpikong dulog sa arkival na konteksto</li>
   </ul>
+  
+<p><a href="https://docs.google.com/document/d/1_A8x3i1ik5pKuamIQ2sQb7Dxaytl04oS/edit?usp=drive_link&ouid=111064999757391678159&rtpof=true&sd=true" target="_blank" style="color: #0066cc; text-decoration: underline;">Basahin ang buong dokumento rito</a></p>
+  
 </section>
 </section>
 <!-- Week 17 content -->
@@ -1168,15 +1233,18 @@ Ang mga sumusunod na halimbawa ng pananaliksik ay ilan lamang sa mga gawa ng mag
 
   <h3>Community Discussion Forums</h3>
   <p>Ito ay nakadisenyo upang kumalap ng mga opinyon, pag-uugali, at ideya ng komunidad na may kaugnayan sa mga suliranin at isyung panlipunan.</p>
+
+<p><a href="https://docs.google.com/document/d/1QADbouJTNo4JP-VqxYhiDitlVl8ccCl2/edit?usp=drive_link&ouid=111064999757391678159&rtpof=true&sd=true" target="_blank" style="color: #0066cc; text-decoration: underline;">Basahin ang buong dokumento rito</a></p>
+
 </section>
 
-      <!-- Week 1 to 17 content placeholders -->
+      <!-- Week 1 to 18 content placeholders -->
       <script>
-        for (let i = 1; i <= 17; i++) {
+        for (let i = 1; i <= 18; i++) {
           document.write(`
             <section id="week${i}" class="lesson">
               <h2>Linggo ${i}</h2>
-              <p>EXAM I-REVIEW ANG BAWAT MODULE..</p>
+              <b><p>EXAM I-REVIEW ANG BAWAT MODULE..</p></b>
             </section>
           `);
         }
