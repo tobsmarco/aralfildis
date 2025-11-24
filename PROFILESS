@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static Dashboard</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f4f6f9; height: 100vh; display: flex; flex-direction: column; }
+
+    .topbar {
+      height: 70px;
+      background: #2c3e50;
+      color: white;
+      padding: 0 30px;
+      display: flex;
+      align-items: center;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    .container { display: flex; flex: 1; }
+
+    .sidebar {
+      width: 280px;
+      background: #34495e;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 20px;
+    }
+
+    .profile {
+      padding: 20px 30px;
+      background: #2c3e50;
+      color: white;
+      cursor: pointer;
+      font-weight: 500;
+      position: relative;
+    }
+
+
+    .dropdown {
+      position: absolute;
+      bottom: 70px;
+      left: 0;
+      width: 100%;
+      background: white;
+      box-shadow: 0 -5px 20px rgba(0,0,0,0.15);
+      display: none;
+      z-index: 100;
+    }
+    .dropdown.show { display: block; }
+
+    .dropdown-item {
+      padding: 16px 30px;
+      color: #2c3e50;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .dropdown-item:hover { background: #f0f2f5; }
+    .dropdown-item small { display: block; color: #777; font-size: 0.9rem; margin-top: 4px; }
+
+    .content {
+      flex: 1;
+      padding: 60px;
+      background: white;
+    }
+    .content h1 { font-size: 2.8rem; color: #2c3e50; margin-bottom: 20px; }
+    .content p { font-size: 1.2rem; color: #444; line-height: 1.7; }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">Title or Logo</div>
+
+  <div class="container">
+    <div class="sidebar">
+      <div class="profile" id="profileBtn">
+        Profile
+        <div class="dropdown" id="dropdown">
+          <!-- EDIT NAMES & DESCRIPTIONS BELOW THIS LINE -->
+          <div class="dropdown-item" onclick="showUser(0)">
+            Duro. Kaith Marky
+            <small>Senior Developer</small>
+          </div>
+          <div class="dropdown-item" onclick="showUser(1)">
+            Enguerra, Aaron C.
+            <small>UI Designer</small>
+          </div>
+          <div class="dropdown-item" onclick="showUser(2)">
+            Marco, Tobey D.
+            <small>Project Manager</small>
+          </div>
+          <div class="dropdown-item" onclick="showUser(3)">
+            Tenorio, Emmanuel Robert
+            <small>Marketing Specialist</small>
+          </div>
+          <div class="dropdown-item" onclick="showUser(4)">
+            Ombrog, Eugene
+            <small>System Administrator</small>
+          </div>
+          <!-- EDIT ABOVE THIS LINE -->
+        </div>
+      </div>
+    </div>
+
+    <div class="content" id="contentArea">
+      <h1>Content Page</h1>
+      <p>Please select a user from the Profile menu.</p>
+    </div>
+  </div>
+
+  <script>
+    // EDIT USER DATA HERE (easy to change)
+    const users = [
+      { name: "Duro. Kaith Marky", desc: "" },
+      { name: "Enguerra, Aaron C.", desc: "" },
+      { name: "Marco, Tobey D.", desc: "" },
+      { name: "Tenorio, Emmanuel Robert", desc: "" },
+      { name: "Ombrog, Eugene", desc: "" }
+    ];
+
+    const profileBtn = document.getElementById('profileBtn');
+    const dropdown = document.getElementById('dropdown');
+    const contentArea = document.getElementById('contentArea');
+
+    profileBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle('show');
+    });
+
+    document.addEventListener('click', () => {
+      dropdown.classList.remove('show');
+    });
+
+    function showUser(index) {
+      dropdown.classList.remove('show');
+      const user = users[index];
+      contentArea.innerHTML = `
+        <h1>${user.name}</h1>
+        <p>${user.desc}</p>
+      `;
+    }
+  </script>
+</body>
+</html>
